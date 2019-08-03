@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="form-box">
+		<h1>Login Here</h1>
+		<div class="input-box">
+			<i class="fa fa-envelope"></i>
+			<input type="Email" name="Email" placeholder="Email">
+			
+		</div>
+		<div class="input-box">
+			<i class="fa fa-key"></i>
+			<input type="Password" name="Password" id="myInput" placeholder="Password" >
+			<span class="eye" onclick="myFunction()">
+			<i id="hide1" class="fa fa-eye"></i>
+			<i id="hide2" class="fa fa-eye-slash"></i>
+			</span>
+		</div>
+		<button type="button" class="login-btn"><b>Log In</b>
+			
+		</button>
+		
+	</div>
+	<script>
+		function myFunction(){
+			var x = document.getElementById("myInput");
+			var y = document.getElementById("hide1");
+			var z = document.getElementById("hide2");
+			if (x.type === 'password') {
+				x.type = "text";
+				y.style.display = "block";
+				z.style.display = "none";
+			}
+			else{
+				x.type = "password";
+				y.style.display = "none";
+				z.style.display = "block";
+			}
+
+		}
+	</script>
+
+
+</body>
+</html>
